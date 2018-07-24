@@ -1,10 +1,10 @@
 package math
 
 import (
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/internal/arith"
-	"github.com/ericlagergren/decimal/internal/arith/checked"
-	"github.com/ericlagergren/decimal/misc"
+	"github.com/MeetFrankie/decimal"
+	"github.com/MeetFrankie/decimal/internal/arith"
+	"github.com/MeetFrankie/decimal/internal/arith/checked"
+	"github.com/MeetFrankie/decimal/misc"
 )
 
 func prepTan(z, x *decimal.Big, ctx decimal.Context) (*decimal.Big, bool) {

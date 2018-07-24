@@ -11,10 +11,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/math"
-	"github.com/ericlagergren/decimal/misc"
-	"github.com/ericlagergren/decimal/suite"
+	"github.com/MeetFrankie/decimal"
+	"github.com/MeetFrankie/decimal/math"
+	"github.com/MeetFrankie/decimal/misc"
+	"github.com/MeetFrankie/decimal/suite"
 )
 
 // Helper returns testing.T.Helper, if it exists.

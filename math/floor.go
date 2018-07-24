@@ -1,8 +1,8 @@
 package math
 
 import (
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/misc"
+	"github.com/MeetFrankie/decimal"
+	"github.com/MeetFrankie/decimal/misc"
 )
 
 // Floor sets z to the greatest integer value less than or equal to x and returns

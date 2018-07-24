@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/ericlagergren/decimal"
+	"github.com/MeetFrankie/decimal"
 )
 
 var (

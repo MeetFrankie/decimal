@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/ericlagergren/decimal"
+	"github.com/MeetFrankie/decimal"
 )
 
 func TestCos(t *testing.T) {

@@ -4,7 +4,7 @@ package checked
 import (
 	"math/big"
 
-	"github.com/ericlagergren/decimal/internal/arith"
+	"github.com/MeetFrankie/decimal/internal/arith"
 )
 
 // Add returns x + y and a bool indicating whether the addition was successful.

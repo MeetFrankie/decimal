@@ -3,7 +3,7 @@ package math_test
 import (
 	"testing"
 
-	"github.com/ericlagergren/decimal"
+	"github.com/MeetFrankie/decimal"
 )
 
 var gB *decimal.Big

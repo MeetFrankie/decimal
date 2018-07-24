@@ -1,7 +1,7 @@
 package math
 
 import (
-	"github.com/ericlagergren/decimal"
+	"github.com/MeetFrankie/decimal"
 )
 
 // Hypot sets z to Sqrt(p*p + q*q) and returns z.

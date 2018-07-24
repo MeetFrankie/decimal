@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"math/bits"
 
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/misc"
+	"github.com/MeetFrankie/decimal"
+	"github.com/MeetFrankie/decimal/misc"
 )
 
 func newDecimal(s string) *decimal.Big {

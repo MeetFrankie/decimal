@@ -8,6 +8,20 @@ import (
 	"strconv"
 )
 
+const (
+	// "If the exponent is less than or equal to zero and the adjusted
+	// exponent is greater than or equal to -6 the number will be
+	// converted to a character form without using exponential notation."
+	//
+	// - http://speleotrove.com/decimal/daconvs.html#reftostr
+	// minExpBeforeFormatAsEnotation	int	= -6   // default "proper" value
+	//
+	// HOWEVER, we deal in numbers < 0.000001 for some cryptocurrencies
+	// so this needs to be adjustable, specs be damned. Besides, the definition
+	// of "format" (see below) for "plain" is *force* plain.
+	minExpBeforeFormatAsEnotation int = -10
+)
+
 // allZeros returns true if every character in b is '0'.
 func allZeros(b []byte) bool {
 	for _, c := range b {
@@ -220,12 +234,8 @@ func (f *formatter) format(x *Big, format format, e byte) {
 	// in decimal digits.
 	adj := exp + (len(b) - 1)
 	if format != sci {
-		if exp <= 0 && (format == plain || adj >= -6) {
-			// "If the exponent is less than or equal to zero and the adjusted
-			// exponent is greater than or equal to -6 the number will be
-			// converted to a character form without using exponential notation."
-			//
-			// - http://speleotrove.com/decimal/daconvs.html#reftostr
+		if exp <= 0 && (format == plain || adj >= minExpBeforeFormatAsEnotation) {
+			// See constant definition of minExpBeforeFormatAsEnotation
 			f.formatPlain(b, exp)
 			return
 		}

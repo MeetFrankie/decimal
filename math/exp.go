@@ -1,8 +1,8 @@
 package math
 
 import (
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/internal/arith"
+	"github.com/MeetFrankie/decimal"
+	"github.com/MeetFrankie/decimal/internal/arith"
 )
 
 // Exp sets z to e ** x and returns z.

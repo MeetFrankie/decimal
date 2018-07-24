@@ -4,10 +4,10 @@ import (
 	stdMath "math"
 	"math/bits"
 
-	"github.com/ericlagergren/decimal"
-	"github.com/ericlagergren/decimal/internal/arith"
-	"github.com/ericlagergren/decimal/internal/arith/checked"
-	"github.com/ericlagergren/decimal/misc"
+	"github.com/MeetFrankie/decimal"
+	"github.com/MeetFrankie/decimal/internal/arith"
+	"github.com/MeetFrankie/decimal/internal/arith/checked"
+	"github.com/MeetFrankie/decimal/misc"
 )
 
 const maxInt = 1<<(bits.UintSize-1) - 1 // Also: uint64(int(^uint(0) << 1))
